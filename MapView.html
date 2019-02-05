@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <!--css reference-->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!--Content-->
+    <head>
+        <nav>
+                <li id="Home"><a href="index.html">Home</a></li>
+                <li class = "border"></li>
+                <li id="Map"><a href="MapView.html">Map View</a></li>
+                <li class = "border"></li>
+                <li id="Contact"><a>Scene View</a></li>
+                <li class = "border"></li>
+                <li id="Info"><a href="ESRI_App.html">ESRI App</a></li>
+        </nav>
+    </head>
+    <main>
+        <body>
+            <h1>
+                Map View.
+            </h1>
+            <meta charset="utf-8">
+            <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+            <div class="MapView">
+            </div>
+             <div class = "mappingcontainer"> 
+                <div id= 'mapViewDiv'></div>
+                <div id="buttons"></div> 
+ 
+                <div class="Bookmarking">
+                    <button id = "extbtn1" class="NAVbutton">Olympia</button>
+                    <button id = "extbtn2" class="NAVbutton">Seattle</button>
+                </div>
+            </div> 
+            <button id="loadService">Load Service</button>  ArcGIS Server Url: <input id= "txtArcGISServerUrl" value = "https://sampleserver6.arcgisonline.com/arcgis/rest/services"></br> 
+            <div id = "example">ex: https://hqolymgis29p.wsdot.loc:6443/arcgis/rest/services</div>
+            Basemap: <select id= "BaseMaps"></select> </br>  
+            Service: <select id="lstservices">Select Service</select></br>
+                <div id="toc"></div>
+                <div class = "layerInfo">
+            
+                
+
+            <div id = "TOCTable">
+
+            </div>
+            <div id="Pages">
+                
+            </div>
+            <div id="AttributeTable">
+            </div>
+            </div>               
+               
+            
+            <!--JS References-->
+            <script language="javascript" src="script.js"></script>
+            <script language="javascript" src="https://js.arcgis.com/4.10/"></script>
+            <script language="javascript" src="TOC.js"></script>
+            <script language="javascript" src = "attributetable.js"></script>
+            
+        </body>
+
+    </main>
+</html>
